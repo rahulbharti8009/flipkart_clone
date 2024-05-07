@@ -65,7 +65,7 @@
   display: flex;
 }
 .search{
-  width: 50vw;
+  width: 30vw;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -144,12 +144,15 @@ display: none;
 .container{
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .muti-category-view{
 display: flex;
-width: 98vw;
+  width: 95vw;
+  flex-wrap: wrap;
 /* height: 10vw; */
 padding: 1vw;
 justify-content: center;
@@ -176,6 +179,36 @@ gap: 1rem;
   font-size: 1vw;
   margin-top: 20px;
 }
+/* top fdeals */
+.top-deals-view{
+  display: flex;
+  flex-wrap: wrap;
+  width: 95vw;
+  /* height: 10vw; */
+  padding: 1vw;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.top-deals-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  border: 1px solid rgb(211, 206, 206);
+  padding: 1vw;
+  border-radius: 0.5vw;
 
+}
+.top-deals-card img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 0.5vw;
+}
+
+.margin-top{
+  margin-top: 10px;
+}
 
 

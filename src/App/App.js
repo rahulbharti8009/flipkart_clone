@@ -14,7 +14,7 @@ function App() {
       </div>
 
       <div className='container'>
-      <div className="card muti-category-view">
+      <div className="card muti-category-view ">
         {
           multiCategory.map((item, index)=> {
              return <>
@@ -25,7 +25,23 @@ function App() {
              </>})
         }
         </div>
+<>
+<div className='card margin-top' >
+<label title=''>{`Top Deals`}</label>
+          <div className="card top-deals-view margin-top">
+            {
+              multiCategory.map((item, index)=> {
+                return <>
 
+                    <div className='top-deals-card'>
+                    <img className='' style={{backgroundColor:'#ffffff'}} src={`${item.url}`} alt="" />
+                    <label title=''>{`${item.title} ${index}`}</label>
+                    </div>
+                </>})
+            }
+            </div>
+        </div>
+</>
   </div>
 
       </div>
