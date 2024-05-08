@@ -55,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  position: sticky;
 }
 
 .header i{
@@ -171,21 +171,28 @@ gap: 1rem;
 }
 
 .multi-card img {
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
   border-radius: 5vw;
 }
 .multi-card label {
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin-top: 20px;
 }
 /* top fdeals */
+.phone-categotry{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 1vw;
+  overflow: 'scroll'
+}
 .top-deals-view{
   display: flex;
   flex-wrap: wrap;
   width: 95vw;
   /* height: 10vw; */
-  padding: 1vw;
   justify-content: start;
   align-items: center;
   gap: 2rem;
@@ -196,19 +203,33 @@ gap: 1rem;
   justify-content: center;
   align-items: center;
   width: 10vw;
-  border: 1px solid rgb(211, 206, 206);
+  border: 1px solid rgba(211, 206, 206, 0.399);
   padding: 1vw;
-  border-radius: 0.5vw;
-
+  border-radius: 0.4vw;
 }
 .top-deals-card img {
   width: 10vw;
   height: 10vw;
   border-radius: 0.5vw;
 }
+.top-deals-card label {
+  font-size: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .margin-top{
   margin-top: 10px;
+}
+
+.categoryRow{
+  display: flex;
+  gap: 2rem;
+}
+
+.from-price{
+  font-weight: 800;
 }
 
 
